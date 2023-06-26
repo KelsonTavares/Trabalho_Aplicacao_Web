@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/player.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/phosphorIcons/Fonts/regular/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="menu">
+            <a href="player.html" class="logo">My Singers</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="list"><a href="index.html">Inicio</a></li>
+                <li class="list"><a href="sobre.html">Sobre</a></li>
+                <li class="list"><a href="singers.html">Singers</a></li>
+                <li class="actives"><a href="#foot">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+       <div class="container">
+            <div class="logos">
+                <img src="" alt="" id="imgs">
+            </div>
+
+            <div class="nomes">
+                    <span id="musicName"></span>
+            </div>
+            
+            <audio src="" id="player"></audio>
+        
+            <div class="footer">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="prevButton"><i class="fa-solid fa-backward-step"></i></i></button>
+                <button id="playPauseButton"><i class="fa-solid fa-play"></i></button>
+                <button id="nextButton"><i class="fa-solid fa-forward-step"></i></button>
+            </div>
+       </div>
+    
+    </main>
+
+    <footer id="foot">
+        <section class="parceiros">
+            <h3>Paceiros</h3>
+            <ul>
+                <li>Unitel</li>
+                <li>My Channel</li>
+                <li>MusicKool</li>
+                <li>Kel Corporation</li>
+                <li>PVSix</li>
+            </ul>
+        </section>
+
+        <section class="contatos">
+
+            <div class="contato">
+                <h3>Contatos</h3>
+                <p>Contato: 942192914</p>
+                <p>Email: mysingers@gmail.com</p>
+                <p>Localizacao: Lobito, Benguela, Angola.</p>
+            </div>
+
+            <div class="media">
+                <h3>Medias</h3>
+                <ul>
+                    <li><a href=""><i class="ph ph-instagram-logo"></i></a></li>
+                    <li><a href=""><i class="ph ph-tiktok-logo"></i></a></li>
+                    <li><a href=""><i class="ph ph-facebook-logo"></i></a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="copy">
+            <h4>&copy; Domingos Cesar and Gabriel Cipriano</h3>
+        </section>
+
+    </footer>
+
+    <script src="/js/slide.js"></script>
+    <script type="module" src="/js/reprod.js"></script>
+</body>
+</html>

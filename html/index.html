@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/slide.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/phosphorIcons/Fonts/regular/style.css">
+    <title>My Singers</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="menu">
+            <a href="index.html" class="logo">My Singers</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="list"><a href="#slide">Inicio</a></li>
+                <li class="list"><a href="sobre.html">Sobre</a></li>
+                <li class="list"><a href="#singer">Singers</a></li>
+                <li class="list"><a href="player.html">Player</a></li>
+                <li class="actives"><a href="#foot">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carossel -->
+        <section class="container" id="slide">
+            <div class="slide-container active">
+                <div class="slide">
+                    <div class="contentproject">
+                        <h3>Rema</h3>
+                        <p>
+                            Rema e um musico Nigeriano, autor de muitos sucessos,
+                            reconhecido em todo mundo, com apenas 21 anos tornou-se um
+                            astro da musica Africana.
+                        </p>
+                        <a href="singers.html" class="btnproj">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="contentproject">
+                        <h3>Anselmo</h3>
+                        <p>
+                            Anselmo Raph e um musico Angolano, autor de muitos sucessos,
+                            reconhecido em todos paises da CPLP e por outros.
+                        </p>
+                        <a href="singers.html" class="btnproj">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="contentproject">
+                        <h3>Roddy Rich</h3>
+                        <p>
+                            Roddy Rich e um musico NAmericano, autor de muitos sucessos,
+                            reconhecido em todo mundo, com apenas 22 anos tornou-se um
+                            astro da musica Estadunidense.
+                        </p>
+                        <a href="singers.html" class="btnproj">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="prev" onclick="prev()"> < </div>
+            <div id="next" onclick="next()"> > </div>
+        </section>
+
+        <!-- Cards -->
+        <div id="singer">
+            <h2>Singers</h2>
+        </div>
+        <section class="container-card">
+            
+            <!-- primeiro Card -->
+            <div class="card">
+                <div class="img">
+                    <img src="/img/rema2.png" alt="rema">
+                </div>
+                <h1>Rema</h1>
+                <div class="content">
+                    <p>
+                        Rema e um musico Nigeriano, autor de muitos sucessos,
+                        reconhecido em todo mundo, com apenas 21 anos tornou-se um
+                        astro da musica Africana.
+                    </p>
+                </div>
+            </div>
+            <!-- Segundo Card-->
+            <div class="card">
+                <div class="img">
+                    <img src="/img/anselmo.png" alt="github">
+                </div>
+                <h1>Anselmo</h1>
+                <div class="content">
+                    <p>
+                        Anselmo Raph e um musico Angolano, autor de muitos sucessos,
+                        reconhecido em todos paises da CPLP e por outros.
+                    </p>
+                </div>
+            </div>
+            <!-- Terceiro Card-->
+            <div class="card">
+                <div class="img">
+                    <img src="/img/roddy-ricch-2-920x625.png" alt="instagram">
+                </div>
+                <h1>Roddy Rich</h1>
+                <div class="content">
+                    <p>
+                        Roddy Rich e um musico NAmericano, autor de muitos sucessos,
+                        reconhecido em todo mundo, com apenas 22 anos tornou-se um
+                        astro da musica Estadunidense.
+                    </p>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer id="foot">
+        <section class="parceiros">
+            <h3>Paceiros</h3>
+            <ul>
+                <li>Unitel</li>
+                <li>My Channel</li>
+                <li>MusicKool</li>
+                <li>Kel Corporation</li>
+                <li>PVSix</li>
+            </ul>
+        </section>
+
+        <section class="contatos">
+
+            <div class="contato">
+                <h3>Contatos</h3>
+                <p>Contato: 942192914</p>
+                <p>Email: mysingers@gmail.com</p>
+                <p>Localizacao: Lobito, Benguela, Angola.</p>
+            </div>
+
+            <div class="media">
+                <h3>Medias</h3>
+                <ul>
+                    <li><a href=""><i class="ph ph-instagram-logo"></i></a></li>
+                    <li><a href=""><i class="ph ph-tiktok-logo"></i></a></li>
+                    <li><a href=""><i class="ph ph-facebook-logo"></i></a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="copy">
+            <h4>&copy; Domingos Cesar and Gabriel Cipriano</h3>
+        </section>
+
+    </footer>
+
+    <script src="/js/mobile.js"></script>
+    <script src="/js/slide.js"></script>
+</body>
+</html>

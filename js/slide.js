@@ -1,0 +1,62 @@
+let slides = document.querySelectorAll('.slide-container');
+let index = 0;
+
+function next(){
+    slides[index].classList.remove('active');
+    index = (index + 1 ) % slides.length;
+    slides[index].classList.add('active');
+}
+
+function prev(){
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length ) % slides.length;
+    slides[index].classList.add('active');
+}
+
+setInterval(next, 5000);
+
+
+const  meunlink = document.querySelectorAll('.menu a[href^="#"]');
+
+function ScrollToSection(event){
+    event.preventDefault();
+    const distanceFromTheTop = getDistanceFromTheTop(event.target) - 90;
+    console.log(event.target);
+    smoothScrollTo(0,  distanceFromTheTop, 1500);
+}
+
+function getDistanceFromTheTop(element){
+    const id = element.getAttribute("href");
+    return document.querySelector(id).offsetTop;
+}
+
+meunlink.forEach((link) => {
+    link.addEventListener('click', ScrollToSection);
+});
+
+function smoothScrollTo(endX, endY, duration){
+    const startX = window.scrollX || window.pageXOffset;
+    const startY = window.scrollY || window.pageYOffset;
+    const distanceX = endX - startX;
+    const distanceY = endY - startY;
+    const startTime = new Date().getTime();
+
+    duration = typeof duration !== "underfined" ? duration : 400;
+
+    const easeInOutQuart = (time, from, distance, duration) =>{
+        if((time /= duration / 2) < 1)
+            return (distance / 2) * time * time * time * time + from;
+        return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
+    };
+
+    const timer = setInterval(() => {
+        const time = new Date().getTime() - startTime;
+        const newX = easeInOutQuart(time, startX, distanceX, duration);
+        const newY = easeInOutQuart(time, startY, distanceY, duration);
+        if (time >= duration){
+            clearInterval(timer);
+        }
+        window.scroll(newX, newY);
+
+    }, 1000 / 60 );
+}
