@@ -1,5 +1,0 @@
-Este grupo e composto por dois estudantes:
-* Domingos Armando Tavares Cesar;
-* Gabriel Cipriano.
-
-Nome do site: My Singers e uma plataforma para cantores favoritos.
